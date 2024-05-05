@@ -31,6 +31,7 @@ class using_quots {
 class println_method { 
     public static void main(String[] args) {
         System.out.println("hello"); // println method is used to output line of text/numers 
+        //print() method will not move to the next line
     }
 }
 
@@ -57,3 +58,100 @@ class Variables {
         System.out.println (name1); 
     } 
 };
+
+
+//___________VARIABLES TYPES________________
+// as in other programing languages there are couple of Variable types
+class Variable_types { 
+    public static void main(String[] args) {
+        int i = 1; // ints (full nubmers) ex. -2 0 20
+        double d = 25.2; // double which is a floating point number like 2.5
+        float f = 25.2f; // float is a the same as a double but needs to be writen with a "f" ant the end
+        //float takes up half the memory but is less precise/ if speed is the key use float if percision use double 
+        char c = 'c'; //chars - single letters need to wreinten in single '*' not "*"
+        boolean b = false; // can only have false or true value to be use in conditions 
+    } 
+};
+
+
+//__________________MATH______________________
+// math operator that are standart and available are + - / * and % below some examples
+class Math_Operator{ 
+    public static void main(String[] args) {
+        int a = 8;
+        int b = 3;
+        double c = 25.2;
+        double d = 256.1;
+
+        //addition
+        double e = d + c; // addition that can be stored in another variable 
+        System.out.println(a+b); 
+
+        // concatinnation
+        String f = "tom";
+        String g = " bob";
+        System.out.println(f+g); // concatination is a proces to connect two string 
+
+        // multiplicaiton
+        System.out.println(a*0.2); // if you multiply by a double (which is the default variable type for floating points) the resault will be a dobule 
+
+        // diviion 
+        System.out.println(a/b); // if you divide two int the resaul would be a int
+        System.out.println(a/c); // if you divide by at least one double
+
+        // modulo % return the amount waht is left from the division
+        System.out.println(a%b);
+    } 
+};
+
+
+//_______________COMMENTS____________________
+// if you want to inser a single line comment u use // 
+/*if you want tu use a multiple line comment 
+ * u can use as shown */
+
+
+//_________________INPUT_____________________
+//input_from_user.java
+import java.util.Scanner; // to use impot it is essencial to import the Scanner class
+class input_from_user{ 
+    public static void main(String[] args) {
+        Scanner sc = new // after importing the Scanner class we need to create a Scanner obj. // no need for ; at the end of the line
+        Scanner(System.in);
+        Scanner ss = new Scanner(System.in); // you can combine the lines in to one line the above
+
+        //inputing a string 
+        System.out.print("what is your name : ");
+        String name = sc.nextLine();
+        System.out.println("hello, "+ name+".");
+
+        //inputing a int 
+        System.out.print("what is your age : ");
+        int age = sc.nextInt();
+        System.out.println("good to know that your age is: "+ age+".");
+        // as you can see one Scanner obj. can be used for multiple imputs
+    } 
+};
+
+
+//____________CONDITIONALS_________________
+// if (conditions) // the following comparison operators can be used for conditions == >= <= > < !=
+//first_conditionlas.java
+import java.util.Scanner;
+class Demo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("what is your age : ");
+        int age = sc.nextInt();
+
+        if(age < 18){ // here is the conditionals statement 
+            System.out.println("you are underaged"); // and here is the code block that is executed when the if statement is true 
+        }
+        else if (age >= 18 && age<80){
+            System.out.println("you are of age");
+        }
+        else{
+            System.out.println("you are a senior");
+        }
+    }
+}
