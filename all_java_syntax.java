@@ -138,7 +138,7 @@ class input_from_user{
 // if (conditions) // the following comparison operators can be used for conditions == >= <= > < !=
 //first_conditionlas.java
 import java.util.Scanner;
-class Demo {
+class first_conditionlas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("what is your age : ");
@@ -152,6 +152,30 @@ class Demo {
         }
         else{
             System.out.println("you are a senior");
+        }
+    }
+}
+
+
+//_____________SWITCH_______________
+//switch_statement.java
+//is a conditional that compare the variable to values and if the values are equal it will execute the code block in the indent and up to a break keyword
+class switch_statement{
+    public static void main(String[] args) {
+        int day = 2;
+        switch(day){// here we assinge in the () what variable is commpared
+            case 1:// here is the first case that the variable is compared to 
+                System.out.println("First case");
+                break;// essential if you would not the code block in other case code indents to execute
+            case 2:
+                System.out.println("second case");
+                break;
+            case 3:
+                System.out.println("third case");
+                break;
+            default: // you can define a default case if that would be executed if other cases wouldnt
+                System.out.println("default case");
+                break;
         }
     }
 }
