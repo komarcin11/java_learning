@@ -179,3 +179,20 @@ class switch_statement{
         }
     }
 }
+
+
+//_______________MULTIPLE CONDITIONS__________________
+// to put in one if statement multiple conditions you need to used ands and ors
+// && is and, || id or, ! is not
+//multiple_conditions.java
+class multiple_conditions{
+    public static void main(String [] args){
+        String country = "US";
+        int age = 43;
+        if((country=="US" || country == "GB") && ((age>0 && age < 100)) && (!(age<18))){// u can use () to compartmentalise your conditions
+            System.out.println(" Allowed");
+        }
+    }
+}
+
+
