@@ -196,3 +196,32 @@ class multiple_conditions{
 }
 
 
+//________________WHILE LOOPS______________
+//while_loops.java
+class while_loops{
+    public static void main(String [] args){
+      int x = 10;
+      while(x>0){//the folowing syntax is appled to executed
+
+        System.out.println(x);
+        x--; // is the same as x=x-1 or x-=1
+      }
+    }
+}
+
+
+//__________________FOR LOOP___________
+//for_loops.java
+class for_loops{
+    public static void main(String [] args){
+        for (int i=1; i<10;i++){ // for loop syntaX
+            if(i==4){
+                continue;// continue will move one to the begining of the while loop// in resault number 4 will not be printed
+            }
+            else if (i==9){
+                break; // break key word will break the while loop// therefore the 1 number will not printed
+            }
+            System.out.println(i);
+        }
+    }
+}
