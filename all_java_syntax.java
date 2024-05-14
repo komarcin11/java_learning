@@ -225,3 +225,22 @@ class for_loops{
         }
     }
 }
+
+
+//________________ARRAYS_________________
+//first_on_arrays.java
+class first_on_arrays {
+    public static void main(String [] args){
+        //declaring a Array
+        int[] age; // declering the array as well the datatype that the array will store
+        age = new int [5]; // here we declare a array size // array with 5 elements
+        int[] ages = new int[5]; // here it is shown in single line 
+        String[] names = {"a", "b", "c", "d"}; // here is a ex. how you can declare a array with assining elements as well as declering the arrya size
+        int nums[]; // its a way to declare a arrya but not often used
+        
+        //accessing arrays elements
+        ages[2] = 25; //here we are accesing the 3rd element in the array and assining its a value // 3rd element because the 1st elements index is 0
+        System.out.println(ages[2]); //here we we can access the element within the array
+        System.out.println(names[2]);
+    }
+}
